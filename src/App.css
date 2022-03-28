@@ -1,38 +1,124 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200&display=swap');
+
+h1, h2, h3, a, p, li, span, label {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+#app {
+  padding: 0;
+  padding-top: 30px;
+}
+
+.title a {
+  font-size: 36px;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 10px;
+}
+
+.navbar-collapse {
+  justify-content: center;
+}
+
+.nav-item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-link {
+  color: black; 
+}
+
+.barre {
+  border-right: 1px solid black;
+}
+
+.banner {
+  width: 100%;
+}
+
+.introduce {
+  padding: 70px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.introduce div {
+  margin-bottom: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.introduce h2 {
+  word-spacing: 4px;
+}
+
+.introduce p {
+  width: 40%;
+  margin: auto;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.contact-section img{
+width: 100%;
+height: 800px;
+}
+
+.contact-section h2{
+  font-weight: 400;
+  margin-top: 50px;
   }
+
+input {
+  height: 60px;
+  width: 300px;
+  padding-left: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+select {
+  height: 60px;
+}
+
+textarea {
+  height: 150px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+select, textarea {
+  width: 600px;
+  padding-left: 20px;
+}
+
+.range, .range-two {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-dark {
+  width: 600px;
+    height: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.groups {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
 }
+
+.groups div {
+
+  margin-bottom: 50px;
+  width: 45%;
+}
+
+.groups-section h2 {
+  font-weight: 400;
+}
+
