@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ihk-v2/static/css/main.ecc8b0e0.css",
+    "main.js": "/ihk-v2/static/js/main.57ba7ae7.js",
+    "static/js/787.8c153399.chunk.js": "/ihk-v2/static/js/787.8c153399.chunk.js",
+    "index.html": "/ihk-v2/index.html",
+    "main.ecc8b0e0.css.map": "/ihk-v2/static/css/main.ecc8b0e0.css.map",
+    "main.57ba7ae7.js.map": "/ihk-v2/static/js/main.57ba7ae7.js.map",
+    "787.8c153399.chunk.js.map": "/ihk-v2/static/js/787.8c153399.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ecc8b0e0.css",
+    "static/js/main.57ba7ae7.js"
+  ]
+}
