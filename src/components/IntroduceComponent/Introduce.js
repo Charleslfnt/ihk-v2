@@ -5,7 +5,7 @@ class Introduce extends React.Component {
         return (
             <div className="introduce">
                 <div>
-                <h2>QUI SOMMES-NOUS ?</h2>
+                <h2 id="nous">QUI SOMMES-NOUS ?</h2>
                 <p>Depuis plus de 20 ans, IHK assure le négoce de produits tels que : Matériaux de construction (fer à béton, cornières, tôles ondulées, profilés...) 
                     mais nous commercialisons également d'autres produits tels que : Acier, Quincaillerie, Bois,
                      Revêtement sol (carrelage, parquet,…) et plafond, Sanitaire, Produits Chimiques</p>

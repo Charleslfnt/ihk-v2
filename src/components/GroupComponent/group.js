@@ -4,20 +4,23 @@ class Group extends React.Component {
     render() {
         return (
             <div className="groups-section">
-                <h2 className="text-center">Nos groupes</h2>
+                    <img src="img/businesswoman.jpeg" alt="contact" className="img-fluid banniere"></img>
+                <h2 className="text-center" id="groupes">Nos groupes</h2>
                 <div class="groups">
                     <div>
                     <h3 className="text-center">IHK ltd</h3>
-                    <p className="text-center">Vente de matériaux</p>
+                    <p className="text-center">Société d'import export de matériaux de construction</p>
                     </div>
                     <div>
                     <h3 className="text-center">IHK Immo</h3>
+                    <p className="text-center">Location immobilière</p>
                     </div>
                 </div>
 
                 <div class="groups">
                     <div>
                     <h3 className="text-center">IHK Location</h3>
+                    <p className="text-center">Location de voitures</p>
                     </div>
                     <div>
                     <h3 className="text-center">Safran Prestige</h3>

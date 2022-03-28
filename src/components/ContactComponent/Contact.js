@@ -4,20 +4,20 @@ class Contact extends React.Component {
      render() {
         return (
             <div className="contact-section">
-                <img src="img/businesswoman.jpeg" alt="contact" className="img-fluid"></img>
-                <h2 className="text-center">Contact</h2>
+                <img src="img/businesswoman.jpeg" alt="contact" className="img-fluid banniere "></img>
+                <h2 className="text-center" id="contact">Contact</h2>
                 <form action="#">
                     <div>
                         <div className="range">
-                        <input type="text" name="nom" className="" placeholder="Nom"></input>
-                        <input type="text" name="prenom" className="" placeholder="Prénom"></input>
+                        <input type="text" name="nom" className="" placeholder="Nom" required></input>
+                        <input type="text" name="prenom" className="" placeholder="Prénom" required></input>
                         </div>
                         <div className="range">
-                        <input type="email" name="email" className="" placeholder="E-mail"></input>
+                        <input type="email" name="email" className="" placeholder="E-mail" required></input>
                         <input type="text" name="societe" className="" placeholder="Société"></input>
                         </div>
                         <div className="range-two">
-                        <select type="text" name="societe" className="">
+                        <select type="text" name="sujet" required>
                             <option value="">Sujet :</option>
                             <option value="IHK-LTD">IHK LTD</option>
                             <option value="Safran Prestige">Safran Prestige</option>
@@ -27,7 +27,11 @@ class Contact extends React.Component {
                         </select>
                         </div>
                         <div className="range-two">
-                        <textarea name="message" class="" placeholder="Rédigez votre message ici..."></textarea>
+                        <textarea name="message" class="" placeholder="Rédigez votre message ici..." required></textarea>
+                        </div>
+                        <div className="range-check">
+                        <input type="checkbox" name="checkbox" value="checked" id="check" required></input>
+                        <label for="check">Les informations recueillies à partir de ce formulaire sont strictement à usage interne et réservées au traitement de votre demande - Politique de confidentialité</label>
                         </div>
                         <div className="range-two">
                         <button type="submit" class="btn btn-dark">Envoyer !</button>
