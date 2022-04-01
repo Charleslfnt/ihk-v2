@@ -10,22 +10,28 @@ class Contact extends React.Component {
             prenom: '',
             email: '',
             societe: '',
+            consent: false,
             message: ''
+            
         }
 
         this.handleChange = this.handleChange.bind(this);
     }
 
     handleChange(e) {
-        const target = e.target.value
-        const value = target.type === 'checkbox' ? target.checked : target.value;
-        const nom = target.nom;
-        const prenom = target.prenom;
-        const email = target.email;
-        const societe = target.societe;
-        const message = target.message;
+        const name = e.target.name;
+        const prenom = e.target.prenom;
+        const email = e.target.email;
+        const societe = e.target.societe;
+        const message = e.target.message;
+        const type = e.target.type
+        const value = type === 'checkbox' ? e.target.checked : e.target.value;
+        
+       
 
-        this.setState({value: e.target.value});
+        this.setState({
+            [name]: value
+        });
     }
 
 
@@ -41,6 +47,7 @@ class Contact extends React.Component {
             prenom: '',
             email: '',
             societe: '',
+            consent: false,
             message: ''
         }) 
     }
@@ -54,7 +61,7 @@ class Contact extends React.Component {
                     <div>
                         <div className="range">
                         <input type="text" name="nom" className="" placeholder="Nom" value={this.state.nom} onChange={this.handleChange} required></input>
-                        <input type="text" name="prenom" className=""  placeholder="Prénom" value={this.state.prenom} required></input>
+                        <input type="text" name="prenom" className=""  placeholder="Prénom" value={this.state.prenom} onChange={this.handleChange}  required></input>
                         </div>
                         <div className="range">
                         <input type="email" name="email" className="" placeholder="E-mail" value={this.state.email} onChange={this.handleChange}  required></input>
@@ -74,8 +81,8 @@ class Contact extends React.Component {
                         <textarea name="message" class="" placeholder="Rédigez votre message ici..." value={this.state.message} onChange={this.handleChange} required></textarea>
                         </div>
                         <div className="range-check">
-                        <input type="checkbox" name="checkbox" id="check"  required></input>
-                        <label for="check">Les informations recueillies à partir de ce formulaire sont strictement à usage interne et réservées au traitement de votre demande - Politique de confidentialité</label>
+                        <input type="checkbox" name="checkbox" id="check" value={this.state.consent} onChange={this.handleChange}  required></input>
+                        <label htmlFor="check">Les informations recueillies à partir de ce formulaire sont strictement à usage interne et réservées au traitement de votre demande - Politique de confidentialité</label>
                         </div>
                         <div className="range-two">
                         <button type="submit" class="btn btn-dark">Envoyer !</button>
